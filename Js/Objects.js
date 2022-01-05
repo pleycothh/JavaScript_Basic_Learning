@@ -115,3 +115,51 @@ const message = 'hi';
 
 //string object
 const anotherMessage = new String('jo');
+
+
+/// Execrise 1
+
+console.log("Execrice 1:");
+
+let address = {
+    street:"asd",
+    city:"brisbane",
+    zipCode: 1234
+};
+
+function showAddress(address){
+    for ( let i in address)
+        console.log(i, address[i])
+}
+
+showAddress(address);
+
+/// Execrice 6
+
+console.log("\nExecirce 6:")
+
+let priceRange = [
+    {
+        name:"$",
+        low:1,
+        high:10
+    },
+    {
+        
+        name:"$$",
+        low:10,
+        high:100
+    },
+    {
+        name:"$$$",
+        low:100,
+        high:100
+    },
+];
+
+
+for (i in priceRange){
+    if(5 > priceRange[i].low && 5 < priceRange[i].high) {
+        console.log(5, priceRange[i].name)
+    }
+}
